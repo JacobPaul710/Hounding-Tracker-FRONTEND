@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Hounding-Tracker-FRONTEND
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A MERN-stack application that can be accessed by the user as a reference, or a social platform. Rock-hounds who want to see what types of minerals are being found in what locations, at specific times of year can browse the collections database. Rock-hounds who want to share their most recent mineral discovery have the ability to upload a new entry to the collections database and share their details with other hobbiest.
 
-## Available Scripts
+## User Story
 
-In the project directory, you can run:
+- AAU, I want to arrive at a home page that clearly informs me of how the site works.
+- AAU, I should see a Nav bar that links me to an index page of submissions, as well as gives me the ability to add a new submission to the index page, from the home page.
+- AAU, I expect the index page to link to each individual item's show page.
+- AAU, I want to be able to create a new submission that includes the type of mineral found, county location, date, conditions, and an image.
+- AAU, I need the ability to edit and delete a submission from the index page.
+- AAU, I want each show page to display a map with the county in which it was found. **STRETCH FEATURE**
+- AAU, I want to be the only one with the permission to edit and delete the submissions I made. **STRETCH FEATURE**
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. To view collections from the home page, click the link at the top of the page that reads "View Collections". This will display a database of entries submitted by other rock-hounds. 
+2. To expand the data about a specific find, click the image. This will display a show page for the specific mineral selected. The show page will display all of the data for the discovery of the selected mineral.  
+3. To add a new mineral to the collections database, from any page, click the link at the top of the page that reads "Add Mineral". A form of information about their discovery to fill out and submit will be displayed. Clicking the submit button will add the information provided to the database, which will reflect on the collections (index) and show pages. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Technologies Used
 
-### `npm test`
+- React
+- Express
+- JSX
+- CSS
+- Bcrypt
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Wireframe
 
-### `npm run build`
+![Hounding_Tracker_Wireframe](https://github.com/JacobPaul710/Hounding-Tracker-FRONTEND/assets/123111537/12d174f7-a664-4446-b368-a243b5813dca)
+![Hounding_Tracker_Wireframe](https://github.com/JacobPaul710/Hounding-Tracker-FRONTEND/assets/123111537/b10d1b6a-cf11-44cb-9bee-5c6535811c20)
+![Hounding_Tracker_Wireframe](https://github.com/JacobPaul710/Hounding-Tracker-FRONTEND/assets/123111537/39e62979-0bd2-4b4d-8b32-920ecf588ee9)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Icebox
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add the ability for a user to choose whether they want to broadcast their details to the collection, or keep it in a personal log tracker instead.
