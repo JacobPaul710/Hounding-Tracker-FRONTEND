@@ -25,7 +25,7 @@ function Minerals() {
             {minerals.map((mineral) => {
                 return (
                     <Link to={`/minerals/${mineral._id}`} key={mineral._id}>
-                        <h1>{mineral.image}</h1>
+                        <img src={mineral.image} />
                     </Link>
                 )
             })}
