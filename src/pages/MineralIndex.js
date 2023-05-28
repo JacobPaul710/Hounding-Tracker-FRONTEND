@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-function Minerals () {
+function Minerals() {
     const [minerals, setMinerals] = useState([]);
 
     const fetchMinerals = async () => {
@@ -24,9 +24,9 @@ function Minerals () {
         <>
             {minerals.map((mineral) => {
                 return (
-                    <div key={mineral._id}>
+                    <Link to={`/minerals/${mineral._id}`} key={mineral._id}>
                         <h1>{mineral.image}</h1>
-                    </div>
+                    </Link>
                 )
             })}
         </>
