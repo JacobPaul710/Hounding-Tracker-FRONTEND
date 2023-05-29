@@ -1,7 +1,7 @@
-import MineralIndex from './pages/MineralIndex';
-import MineralShow from './pages/MineralShow';
-import MineralNew from './pages/MineralNew';
-import MineralHome from './pages/MineralHome';
+import MineralIndex from './pages/index/MineralIndex';
+import MineralShow from './pages/show/MineralShow';
+import MineralNew from './pages/new/MineralNew';
+import MineralHome from './pages/home/MineralHome';
 
 import { Routes, Route } from 'react-router-dom';
 

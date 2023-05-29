@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Minerals from './MineralIndex';
-import Nav2 from '../components/Nav2';
+import Minerals from '../index/MineralIndex';
+import Nav2 from '../../components/Nav2';
 
 function NewMineral() {
    const [mineralForm, setMineralForm] = useState({

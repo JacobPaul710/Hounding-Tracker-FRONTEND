@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
-import Nav2 from '../components/Nav2';
+import Nav2 from '../../components/Nav2';
 
 
 function MineralShow() {

@@ -1,4 +1,4 @@
-import Nav1 from '../components/Nav1';
+import Nav1 from '../../components/Nav1';
 
 function MineralHome() {
     return(
