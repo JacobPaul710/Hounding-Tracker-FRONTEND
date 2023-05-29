@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Minerals from './MineralIndex';
+import Nav2 from '../components/Nav2';
 
 function NewMineral() {
    const [mineralForm, setMineralForm] = useState({
@@ -41,6 +42,7 @@ function NewMineral() {
 
     return (
     <>
+        <Nav2 />
         <div className="newPageInfo">
             <h1>Add your hounding find to our collection!</h1>
         </div>

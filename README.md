@@ -24,7 +24,6 @@ A MERN-stack application that can be accessed by the user as a reference, or a s
 - Express
 - JSX
 - CSS
-- Bcrypt
 
 ### Wireframe
 
@@ -35,3 +34,5 @@ A MERN-stack application that can be accessed by the user as a reference, or a s
 #### Icebox
 
 - Add the ability for a user to choose whether they want to broadcast their details to the collection, or keep it in a personal log tracker instead.
+- Add Pagination to allow the user to click through multiple pages when a large amount of data has been entered into the collection. 
+- Add Auth with Bcrypt to allow users to create a profile to manage their posts from. 

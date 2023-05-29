@@ -1,6 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Nav2 from '../components/Nav2';
 
 function Minerals() {
     const [minerals, setMinerals] = useState([]);
@@ -26,6 +27,7 @@ function Minerals() {
 
     return (
         <>
+            <Nav2 />
             <h1>Enjoy browsing through this collection of finds around Oregon!</h1>
             {minerals.map((mineral) => {
                 return (

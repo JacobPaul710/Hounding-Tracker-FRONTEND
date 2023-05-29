@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
+import Nav2 from '../components/Nav2';
+
 
 function MineralShow() {
     const [mineral, setMineral] = useState(null)
@@ -27,10 +29,11 @@ function MineralShow() {
 
     return (
         <>
-            <div>
+            <Nav2 />
+            <div className="mineralImageDiv">
                 <img src={mineral.image} alt={mineral.mineralType} />
             </div>
-            <div>
+            <div className="mineralInfoDiv">
                 <h1>Information</h1>
                 <h2>Mineral Type: {mineral.mineralType}</h2>
                 <h2>Date Found: {mineral.date}</h2>
