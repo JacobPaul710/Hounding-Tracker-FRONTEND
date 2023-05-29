@@ -26,12 +26,15 @@ function Minerals() {
 
     return (
         <>
-            
+            <h1>Enjoy browsing through this collection of finds around Oregon!</h1>
             {minerals.map((mineral) => {
                 return (
-                    <Link to={`/minerals/${mineral._id}`} key={mineral._id}>
-                        <img src={mineral.image} alt={mineral.Type} />
-                    </Link>
+                    <div className="mineralDiv">
+                        <Link to={`/minerals/${mineral._id}`} key={mineral._id}>
+                            <img src={mineral.image} alt={mineral.Type} />
+                        </Link>
+                        <p>Found by: {mineral.houndingName}</p>
+                    </div>
                 )
             })}
         </>
