@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Minerals() {
@@ -9,7 +9,7 @@ function Minerals() {
         try {
             let mineralData = await fetch('https://hounding-tracker-backend.onrender.com/minerals');
             mineralData = await mineralData.json();
-            // console.log(mineralData);
+            console.log(mineralData);
             setMinerals(mineralData);
         } catch (error) {
             console.log(error);
@@ -20,12 +20,17 @@ function Minerals() {
         fetchMinerals()
     }, []);
 
+    if (!minerals) {
+        return <p>Loading mineral data...</p>
+    }
+
     return (
         <>
+            
             {minerals.map((mineral) => {
                 return (
                     <Link to={`/minerals/${mineral._id}`} key={mineral._id}>
-                        <img src={mineral.image} />
+                        <img src={mineral.image} alt={mineral.Type} />
                     </Link>
                 )
             })}

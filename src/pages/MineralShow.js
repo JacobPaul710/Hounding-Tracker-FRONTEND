@@ -27,14 +27,12 @@ function MineralShow() {
 
     return (
         <>
-            <h1>{mineral._id}</h1>
-            <h1>{mineral.mineralType}</h1>
-            <h1>{mineral.date}</h1>
-            <h1>{mineral.conditions}</h1>
-            <h1>{mineral.county}</h1>
-            <h1>{mineral.image}</h1>
-            <h1>{mineral.houndingName}</h1>
-            <h1>{mineral.createdAt}</h1>
+            <h1>Mineral Type: {mineral.mineralType}</h1>
+            <h1>Date Found: {mineral.date}</h1>
+            <h1>Conditions: {mineral.conditions}</h1>
+            <h1>County: {mineral.county}</h1>
+            <h1>Found by: {mineral.houndingName}</h1>
+            <img src={mineral.image} alt={mineral.mineralType} />
         </>
     )
 }
