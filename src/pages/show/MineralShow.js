@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
-import Nav2 from '../../components/Nav2';
-
+import Nav2 from '../../components/nav/Nav2';
+import moment from 'moment'
 
 function MineralShow() {
     const [mineral, setMineral] = useState(null)
@@ -21,12 +21,14 @@ function MineralShow() {
 
     useEffect(() => {
         fetchMineralDetails()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if (!mineral) {
         return <p>Loading mineral data...</p>
     }
 
+    const formatted = moment(mineral.date).format("MM/DD/YYYY")
     return (
         <>
             <Nav2 />
@@ -36,7 +38,7 @@ function MineralShow() {
             <div className="mineralInfoDiv">
                 <h1>Information</h1>
                 <h2>Mineral Type: {mineral.mineralType}</h2>
-                <h2>Date Found: {mineral.date}</h2>
+                <h2>Date Found: {formatted}</h2>
                 <h2>Conditions: {mineral.conditions}</h2>
                 <h2>County: {mineral.county}</h2>
                 <h2>Hounded by: {mineral.houndingName}</h2>

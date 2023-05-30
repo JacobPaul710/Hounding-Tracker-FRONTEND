@@ -24,6 +24,7 @@ A MERN-stack application that can be accessed by the user as a reference, or a s
 - Express
 - JSX
 - CSS
+- Moment
 
 ### Wireframe
 

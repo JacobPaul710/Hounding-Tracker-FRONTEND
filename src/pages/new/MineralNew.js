@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Minerals from '../index/MineralIndex';
-import Nav2 from '../../components/Nav2';
+import Nav3 from '../../components/nav/Nav3';
 
 function NewMineral() {
    const [mineralForm, setMineralForm] = useState({
@@ -42,17 +42,17 @@ function NewMineral() {
 
     return (
     <>
-        <Nav2 />
+        <Nav3 />
         <div className="newPageInfo">
             <h1>Add your hounding find to our collection!</h1>
         </div>
-        <div classname="newMineralForm">
+        <div className="newMineralForm">
             <form onSubmit={handleSubmit}>
                 <label>Mineral Type:</label>
                 <input type="text" name="mineralType" onChange={handleChange} placeholder="Mineral Type"/>
                 <br></br>
                 <label>Date:</label>
-                <input type="text" name="date" onChange={handleChange} placeholder="Date of find"/>
+                <input type="date" name="date" onChange={handleChange} placeholder="Date of find"/>
                 <br></br>
                 <label>Conditions:</label>
                 <input type="text" name="conditions" onChange={handleChange} placeholder="Conditions on day of find"/>
