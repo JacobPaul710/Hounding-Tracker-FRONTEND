@@ -22,20 +22,6 @@ function Map() {
         fetchMarkers()
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
-    // const markers = [
-    //     {
-    //       geocode: [44.3914279554609, -122.98910923622539],
-    //       popUp: "Pioneer Park, Brownsville"
-    //     },
-    //     {
-    //       geocode: [45.00643700696789, -124.00787560642435],
-    //       popUp: "Lincoln city"
-    //     },
-    //     {
-    //       geocode: [44.37689134175511, -120.1178183453726],
-    //       popUp: "Ochoco"
-    //     }
-    //   ];
 
       const customIcon = new Icon({
         iconUrl: "https://cdn-icons-png.flaticon.com/512/447/447031.png",
@@ -56,9 +42,8 @@ function Map() {
                 {markers.map((marker) => {
                     return (
                     <Marker position={marker.geocode} icon={customIcon} key={marker.geocode}>
-                        <Popup>{marker.popUp}</Popup>
+                        <Popup>{marker.mineralType} hounded by {marker.houndingName}</Popup>
                      </Marker>
-                    //  console.log(marker.geocode);
                 )}
                 )}
             </MapContainer>

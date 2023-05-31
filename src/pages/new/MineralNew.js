@@ -62,8 +62,8 @@ function NewMineral() {
                 <label>County:</label>
                 <input type="text" name="county" onChange={handleChange} placeholder="County of find"/>
                 <br></br>
-                <label>Coordinates:</label>
-                <input type="text" name="county" onChange={handleChange} placeholder="[Enter rough coordinates of find inside brackets(optional)]"/>
+                <label>Optional Coordinates:</label>
+                <input type="text" name="geocode" onChange={handleChange} placeholder="[Enter rough coordinates of find inside brackets]"/>
                 <br></br>
                 <label>Image:</label>
                 <input type="text" name="image" onChange={handleChange} placeholder="Paste image URL"/>
