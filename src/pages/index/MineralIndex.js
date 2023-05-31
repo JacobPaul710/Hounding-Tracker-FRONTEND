@@ -11,7 +11,6 @@ function Minerals() {
         try {
             let mineralData = await fetch('https://hounding-tracker-backend.onrender.com/minerals');
             mineralData = await mineralData.json();
-            console.log(mineralData);
             setMinerals(mineralData);
         } catch (error) {
             console.log(error);
