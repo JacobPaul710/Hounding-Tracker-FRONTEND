@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Minerals from '../index/MineralIndex';
+import { useNavigate } from 'react-router-dom';
 import Nav3 from '../../components/nav/Nav3';
 
 import './mineralNew.css';
@@ -15,21 +15,21 @@ function NewMineral() {
     houndingName:" "
    }) 
 
+   const navigate = useNavigate();
+
    function handleChange(e) {
-    console.log(e.target, "e target");
     setMineralForm((previousFormState) => ({
         ...previousFormState,
         [e.target.name]: e.target.value
     }))
    }
 
-   console.log(mineralForm, "Mineral Form");
+
 
    async function handleSubmit(e) {
     try{
         e.preventDefault();
         mineralForm.geocode = mineralForm.geocode.split(", ");
-        console.log(mineralForm);
         await fetch('https://hounding-tracker-backend.onrender.com/minerals', {
             method: "POST",
             headers: {
@@ -37,10 +37,11 @@ function NewMineral() {
             },
             body: JSON.stringify(mineralForm)
         })
-         Minerals();
-         e.target.reset();
     } catch(error) {
         console.log(error);
+    } finally{
+        e.target.reset();
+        navigate('/minerals');
     }
    }
 
