@@ -5,11 +5,12 @@ import Nav3 from '../../components/nav/Nav3';
 import './mineralNew.css';
 
 function NewMineral() {
-   const [mineralForm, setMineralForm] = useState({
+   let [mineralForm, setMineralForm] = useState({
     mineralType:" ",
     date: 0,
     conditions:" ",
     county:" ",
+    geocode: [0, 0],
     image:" ",
     houndingName:" "
    }) 
@@ -22,11 +23,13 @@ function NewMineral() {
     }))
    }
 
-   console.log(mineralForm, "Books Form");
+   console.log(mineralForm, "Mineral Form");
 
    async function handleSubmit(e) {
     try{
         e.preventDefault();
+        mineralForm.geocode = mineralForm.geocode.split(", ");
+        console.log(mineralForm);
         await fetch('https://hounding-tracker-backend.onrender.com/minerals', {
             method: "POST",
             headers: {
@@ -43,8 +46,8 @@ function NewMineral() {
 
 
     return (
-    <div id='newBody'>
-        <Nav3 />
+        <div id='newBody'>
+            <Nav3 />
         <div id="newPageInfo">
             <h1>Add your hounding find to our collection!</h1>
         </div>
@@ -63,7 +66,7 @@ function NewMineral() {
                 <input type="text" name="county" onChange={handleChange} placeholder="County of find"/>
                 <br></br>
                 <label>Optional Coordinates:</label>
-                <input type="text" name="geocode" onChange={handleChange} placeholder="[Enter rough coordinates of find inside brackets]"/>
+                <input type="text" name="geocode" onChange={handleChange} placeholder="Enter rough coordinates of find"/>
                 <br></br>
                 <label>Image:</label>
                 <input type="text" name="image" onChange={handleChange} placeholder="Paste image URL"/>
