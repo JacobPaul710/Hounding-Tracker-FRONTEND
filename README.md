@@ -17,12 +17,12 @@ A MERN-stack application that can be accessed by the user as a reference, or a s
 1. To view collections from the home page, click the link at the top of the page that reads "View Collections". This will display a database of entries submitted by other rock-hounds. 
 2. To expand the data about a specific find, click the image. This will display a show page for the specific mineral selected. The show page will display all of the data for the discovery of the selected mineral.  
 3. To add a new mineral to the collections database, from any page, click the link at the top of the page that reads "Add Mineral". A form of information about their discovery to fill out and submit will be displayed. Clicking the submit button will add the information provided to the database, which will reflect on the collections (index) and show pages. 
+4. To view the collection's database with markers on a map, click the Map button on the index page. Clicking each pop-up will provide the information about the find. 
 
 ### Technologies Used
 
 - React
 - Express
-- JSX
 - CSS
 - Moment
 - Leaflet
@@ -39,3 +39,4 @@ A MERN-stack application that can be accessed by the user as a reference, or a s
 - Add the ability for a user to choose whether they want to broadcast their details to the collection, or keep it in a personal log tracker instead.
 - Add Pagination to allow the user to click through multiple pages when a large amount of data has been entered into the collection. 
 - Add Auth with Bcrypt to allow users to create a profile to manage their posts from. 
+- Add boundaries to the map so that only the state of Oregon displays, and only coordinates within the state are permitted.
