@@ -1,0 +1,19 @@
+#showBody {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#mineralImageDiv {
+    border-radius: 5%;
+    min-height: 500px;
+    width: auto;
+}
+
+#mineralInfoDiv {
+    color: gold;
+    font-family: 'Hanalei Fill', cursive;
+}

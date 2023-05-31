@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Minerals from '../index/MineralIndex';
 import Nav3 from '../../components/nav/Nav3';
 
+import './mineralNew.css';
+
 function NewMineral() {
    const [mineralForm, setMineralForm] = useState({
     mineralType:" ",
@@ -41,12 +43,12 @@ function NewMineral() {
 
 
     return (
-    <>
+    <div id='newBody'>
         <Nav3 />
-        <div className="newPageInfo">
+        <div id="newPageInfo">
             <h1>Add your hounding find to our collection!</h1>
         </div>
-        <div className="newMineralForm">
+        <div id="newMineralForm">
             <form onSubmit={handleSubmit}>
                 <label>Mineral Type:</label>
                 <input type="text" name="mineralType" onChange={handleChange} placeholder="Mineral Type"/>
@@ -66,10 +68,10 @@ function NewMineral() {
                 <label>Hounding Name:</label>
                 <input type="text" name="houndingName" onChange={handleChange} placeholder="Name of hounder(username or real)"/>
                 <br></br>
-                <button>Submit</button>
+                <button id='submitButton'>Submit</button>
             </form>
         </div>
-    </>
+    </div>
     )
 }
 

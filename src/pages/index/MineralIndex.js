@@ -1,7 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Nav2 from '../../components/nav/Nav2';
+
+import './mineralIndex.css';
 
 function Minerals() {
     const [minerals, setMinerals] = useState([]);
@@ -26,20 +27,24 @@ function Minerals() {
     }
 
     return (
-        <>
+        <div id="indexBody">
             <Nav2 />
-            <h1>Enjoy browsing through this collection of finds around Oregon!</h1>
+            <div id="indexInstruct">
+                <h1>Enjoy browsing through this collection of finds around Oregon!</h1>
+                <h3>Click each image for more information. Or click the <Link to='/minerals/map'><button id="mapButton">Map</button></Link> to view the collection displayed on a map!</h3>
+            </div>
+            
             {minerals.map((mineral) => {
                 return (
-                    <div className="mineralDiv" key={mineral._id}>
+                    <div id="mineralDiv" key={mineral._id}>
                         <Link to={`/minerals/${mineral._id}`}>
-                            <img src={mineral.image} alt={mineral.Type} />
+                            <img id="mineralImg" src={mineral.image} alt={mineral.Type} />
                         </Link>
-                        <p>Found by: {mineral.houndingName}</p>
+                        <p id="foundBy">Found by: {mineral.houndingName}</p>
                     </div>
                 )
             })}
-        </>
+        </div>
     )
 }
 

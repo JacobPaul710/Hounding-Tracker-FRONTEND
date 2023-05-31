@@ -1,0 +1,49 @@
+#indexBody {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+#mineralImg {
+    height: 150px;
+    /* width: auto; */
+    border-radius: 5%;
+    min-height: 100px;
+
+}
+
+#indexInstruct {
+    color: gold;
+    font-family: 'Hanalei Fill', cursive;
+}
+
+#mapButton {
+        background-color: gold;
+        font-family: 'Hanalei Fill', cursive;
+        font-size: 25px;
+        border-radius: 3%;
+    
+}
+    
+ #mapButton:hover{
+        transition-duration: 0.4s;
+        cursor: pointer;
+        background-color: #b6b0ab;
+        box-shadow: 0 12px 16px 0 gold;
+}
+
+#foundBy {
+        background-color: black;
+        font-family: 'Hanalei Fill', cursive;
+        color: gold;
+}
+
+#mineralDiv {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* background-color: red; */
+}

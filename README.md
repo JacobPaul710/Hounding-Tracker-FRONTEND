@@ -25,6 +25,8 @@ A MERN-stack application that can be accessed by the user as a reference, or a s
 - JSX
 - CSS
 - Moment
+- Leaflet
+- React-Leaflet
 
 ### Wireframe
 

@@ -1,8 +1,27 @@
-nav {
+#nav {
     display: flex;
     justify-content: space-evenly;
+    font-family: 'Hanalei Fill', cursive;
+    background-color: black;
+    align-items: center;
+    padding-bottom: 2%;
 }
 
-img {
-    width: 5%;
+#navImg {
+    width: 6%;
+}
+
+#navButton {
+    background-color: gold;
+    font-family: 'Hanalei Fill', cursive;
+    font-size: 25px;
+    border-radius: 3%;
+
+}
+
+#navButton:hover{
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #b6b0ab;
+    box-shadow: 0 12px 16px 0 gold;
 }

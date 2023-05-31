@@ -1,7 +1,36 @@
-body {
-    /* background-color: black; */
+#homeBody {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.welcomeDiv {
+#welcomeDiv {
+    display: flex;
     color: gold;
+    font-family: 'Hanalei Fill', cursive;
+    background-color: black;
+    text-align: center;
+    height: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+#intro {
+    border: #b6b0ab solid;
+    border-radius: 2%;
+    width: 75%;
+    align-items: center;
+    padding: 2%;
+}
+
+#info {
+    border: #b6b0ab solid;
+    border-radius: 2%;
+    width: 75%;
+    align-items: center;
+    padding: 2%;
 }

@@ -1,6 +1,10 @@
+import './header.css';
+
 function Header () {
     return(
-    <h1>Oregon Rock Hounding Tracker</h1>
+     <div id="header">
+        <h1>Oregon Rock Hounding Tracker</h1>
+    </div>
 )}
 
 export default Header;
