@@ -13,8 +13,7 @@
 }
 
 #newMineralForm {
-   height: 40%;
-   width: 60%;
+   padding: 2%;
    display: flex;
    justify-content: center;
    align-items: center;

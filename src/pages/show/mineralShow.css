@@ -10,10 +10,13 @@
 #mineralImageDiv {
     border-radius: 5%;
     min-height: 500px;
-    width: auto;
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 #mineralInfoDiv {
     color: gold;
     font-family: 'Hanalei Fill', cursive;
+    text-align: center;
 }
