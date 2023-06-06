@@ -47,7 +47,6 @@ A MERN-stack application that can be accessed by the user as a reference, or a s
 ![Screenshot 2023-06-06 at 11 28 45 AM](https://github.com/JacobPaul710/Hounding-Tracker-FRONTEND/assets/123111537/201d6dba-d88d-4178-ab56-d5fbd1c5d948)
 ![Screenshot 2023-06-06 at 11 29 00 AM](https://github.com/JacobPaul710/Hounding-Tracker-FRONTEND/assets/123111537/06dc0d46-9aa7-429d-b617-942397c6587b)
 ![Screenshot 2023-06-06 at 11 29 11 AM](https://github.com/JacobPaul710/Hounding-Tracker-FRONTEND/assets/123111537/0f82e9ec-c487-4261-9c74-a94f4a885f20)
-![Screenshot 2023-06-06 at 11 29 28 AM](https://github.com/JacobPaul710/Hounding-Tracker-FRONTEND/assets/123111537/923afc98-f719-4c92-bb83-b33f5504dbe4)
 ![Screenshot 2023-06-06 at 11 29 34 AM](https://github.com/JacobPaul710/Hounding-Tracker-FRONTEND/assets/123111537/fa3aef1f-e6f4-431e-98cf-8e1d2fc16774)
 
 
